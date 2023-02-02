@@ -1,0 +1,56 @@
+<!-- Tarea 2: Calculadora WEB (8 puntos)
+Haga una calculadora con HTML5 , JavaScript (ES5) adornada con CSS3, la cual
+debe hacer las operaciones básicas de suma, resta, multiplicación y división la cual
+almacene un historial de los cálculos hechos hasta que el usuario decida eliminarlos.
+Utilice la funcionalidad de localStorage para guardar el historial de las operaciones
+realizadas. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora WEB</title>
+    <link rel = "stylesheet" href="style.css" />
+    <script src = "script.js"></script>
+</head>
+<body>
+    <div class="calculadora">
+        <div class="header">
+            <h1>Calculadora</h1>
+        </div>
+        <input type="text" class="pantalla-calc" value="0">
+
+        <div class="botones-calc">
+            <div id="clear" class="boton">C</div>
+            <div id="borrar" class="boton">⌫</div>
+
+            <div id="suma" class="boton">+</div>
+
+            <div id="7" class="boton">7</div>
+            <div id="8" class="boton">8</div>
+            <div id="9" class="boton">9</div>
+
+            <div id="resta" class="boton">-</div>
+
+            <div id="4" class="boton">4</div>
+            <div id="5" class="boton">5</div>
+            <div id="6" class="boton">6</div>
+            
+            <div id="multiplicacion" class="boton">*</div>
+            
+            <div id="1" class="boton">1</div>
+            <div id="2" class="boton">2</div>
+            <div id="3" class="boton">3</div>
+            
+            <div id="division" class="boton">&divide;</div>
+            
+            <div id="cero" class="boton">0</div>
+            <div id="punto" class="boton">.</div>
+            
+            <div id="igual" class="boton">=</div>
+        </div>
+    </div>
+</body>
+</html>
