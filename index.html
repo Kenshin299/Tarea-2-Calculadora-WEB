@@ -12,45 +12,51 @@ realizadas. -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora WEB</title>
+    <script type="text/javascript" src="script.js" defer></script>
     <link rel = "stylesheet" href="style.css" />
-    <script src = "script.js"></script>
 </head>
 <body>
     <div class="calculadora">
         <div class="header">
             <h1>Calculadora</h1>
         </div>
-        <input type="text" class="pantalla-calc" value="0">
-
+        <div class="pantalla-calc">
+            <div data-previous-operand class="previous-operand"></div>
+            <div data-current-operand id="operacion" class="current-operand"></div>
+        </div>
         <div class="botones-calc">
-            <div id="clear" class="boton">C</div>
-            <div id="borrar" class="boton">⌫</div>
+            <button data-clear id="clear" class="boton">C</button>
+            <button data-delete class="boton">⌫</button>
 
-            <div id="suma" class="boton">+</div>
+            <button data-operation class="boton">+</button>
 
-            <div id="7" class="boton">7</div>
-            <div id="8" class="boton">8</div>
-            <div id="9" class="boton">9</div>
+            <button data-number class="boton">7</button>
+            <button data-number class="boton">8</button>
+            <button data-number class="boton">9</button>
 
-            <div id="resta" class="boton">-</div>
+            <button data-operation class="boton">-</button>
 
-            <div id="4" class="boton">4</div>
-            <div id="5" class="boton">5</div>
-            <div id="6" class="boton">6</div>
+            <button data-number class="boton">4</button>
+            <button data-number class="boton">5</button>
+            <button data-number class="boton">6</button>
             
-            <div id="multiplicacion" class="boton">*</div>
+            <button data-operation class="boton">*</button>
             
-            <div id="1" class="boton">1</div>
-            <div id="2" class="boton">2</div>
-            <div id="3" class="boton">3</div>
+            <button data-number class="boton">1</button>
+            <button data-number class="boton">2</button>
+            <button data-number class="boton">3</button>
             
-            <div id="division" class="boton">&divide;</div>
+            <button data-operation class="boton">&divide;</button>
             
-            <div id="cero" class="boton">0</div>
-            <div id="punto" class="boton">.</div>
-            
-            <div id="igual" class="boton">=</div>
+            <button data-number id="cero" class="boton">0</button>
+            <button data-number id="punto" class="boton">.</button>
+
+            <button data-equals id="igual" class="boton">=</button>
+
+            <button data-history id="historial" class="boton">History</button>
+            <button data-clear-history id="clear-historial" class="boton">Clear History</button>
         </div>
     </div>
+    
 </body>
 </html>
