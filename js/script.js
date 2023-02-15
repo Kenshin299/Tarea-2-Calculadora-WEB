@@ -109,6 +109,7 @@ class Calculator {
   })
 
   historyClear.addEventListener('click', button => {
+    historial.innerHTML = "History";
     calculator.resultados = []
     localStorage.clear('historial')
   })
